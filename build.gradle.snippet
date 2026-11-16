@@ -1,0 +1,12 @@
+// ---- Add to the build.gradle of the official NeoForge 1.21.1 MDK ----
+repositories {
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content { includeGroup 'software.bernie.geckolib' }
+    }
+}
+dependencies {
+    implementation "software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.4"
+}
+// gradle.properties of the MDK: minecraft_version=1.21.1, neo_version=21.1.x (newest 21.1 build), mod_id=godzilla_mod
